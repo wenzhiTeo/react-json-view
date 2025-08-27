@@ -1,4 +1,7 @@
 
+# Changes in this fork
+- Added `onToggleCollapsed` prop to control collapse behavior
+
 <h1 align="center">
   <a href="https://react-json-view.microlink.io/">
   <img src="https://raw.githubusercontent.com/microlinkhq/react-json-view/master/docs/assets/rjv-icon-alt.png" alt="react-json-view" width="200"></a>
@@ -10,9 +13,6 @@
   <a href="https://github.com/microlinkhq/react-json-view/actions/workflows/main.yml?query=branch%3Amaster"><img src="https://github.com/microlinkhq/react-json-view/workflows/test/badge.svg" alt="Build Status"></a>
   <br>
 </h1>
-
-# Changes in this fork
-- Added `onToggleCollapsed` prop to control collapse behavior
 
 **react-json-view** (rjv) is a React component for displaying and editing javascript **arrays** and **JSON objects**.
 
