@@ -1,6 +1,11 @@
 
-# Changes in this fork
+<h1>Fork of react-json-view</h1>
+with custom modifications and additional features
+
+## Changes in this fork
 - Added `onToggleCollapsed` prop to control collapse behavior
+
+---
 
 <h1 align="center">
   <a href="https://react-json-view.microlink.io/">
