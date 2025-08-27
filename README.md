@@ -11,6 +11,9 @@
   <br>
 </h1>
 
+# Changes in this fork
+- Added `onToggleCollapsed` prop to control collapse behavior
+
 **react-json-view** (rjv) is a React component for displaying and editing javascript **arrays** and **JSON objects**.
 
 ![](https://raw.githubusercontent.com/microlinkhq/react-json-view/docs/docs/assets/banner.png)
