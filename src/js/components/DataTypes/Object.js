@@ -82,6 +82,17 @@ class RjvObject extends React.PureComponent {
   }
 
   toggleCollapsed = () => {
+    const { onToggleCollapsed } = this.props
+
+    // allow custom behavior when toggling collapse
+    if (typeof onToggleCollapsed === 'function') {
+      const shouldGoDefault = onToggleCollapsed(this.props)
+      if (shouldGoDefault !== true) {
+        return
+      }
+    }
+
+    // default behavior
     this.setState(
       {
         expanded: !this.state.expanded
@@ -240,7 +251,7 @@ class RjvObject extends React.PureComponent {
       index_offset,
       groupArraysAfterLength,
       namespace,
-      showComma,
+      showComma
     } = this.props
     const { object_type } = this.state
     const elements = []

@@ -69,7 +69,11 @@ ReactDom.render(
 
     <br />
 
-    {/* Same example without commas for comparison */}
+    {/* 
+      Same example but: 
+      - without commas for comparison
+      - with custom onToggleCollapsed example
+    */}
     <JsonViewer
       bigNumber={BigNumber}
       sortKeys
@@ -111,6 +115,10 @@ ReactDom.render(
       }}
       defaultValue=''
       showComma={false}
+      onToggleCollapsed={({ namespace }) => {
+        console.log("Custom toggle handler:", namespace);
+        return true;
+      }}
     />
 
     <br />
@@ -258,7 +266,7 @@ ReactDom.render(
 /*-------------------------------------------------------------------------*/
 
 //just a function to get an example JSON object
-function getExampleJson1 () {
+function getExampleJson1() {
   return {
     string: 'this is a test string',
     integer: 42,
@@ -288,7 +296,7 @@ function getExampleJson1 () {
 }
 
 //and another a function to get an example JSON object
-function getExampleJson2 () {
+function getExampleJson2() {
   return {
     normalized: {
       '1-grams': {
@@ -326,7 +334,7 @@ function getExampleJson2 () {
   }
 }
 
-function getExampleJson3 () {
+function getExampleJson3() {
   return {
     example_information:
       'this example has the collapsed prop set to true and the indentWidth prop is set to 8',
@@ -342,7 +350,7 @@ function getExampleJson3 () {
   }
 }
 
-function getExampleJson4 () {
+function getExampleJson4() {
   const large_array = new Array(225).fill('this is a large array full of items')
 
   large_array.push(getExampleArray())
@@ -352,7 +360,7 @@ function getExampleJson4 () {
   return large_array
 }
 
-function getExampleArray () {
+function getExampleArray() {
   return [
     'you can also display arrays!',
     new Date(),
@@ -365,6 +373,6 @@ function getExampleArray () {
   ]
 }
 
-function getExampleWithStringEscapeSequences () {
+function getExampleWithStringEscapeSequences() {
   return { '\\\n\t\r\f\\n': '\\\n\t\r\f\\n' }
 }
