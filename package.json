@@ -2,7 +2,7 @@
   "name": "react-json-view-custom",
   "description": "(Fork of react-json-view) Interactive react component for displaying javascript arrays and JSON objects.",
   "homepage": "https://github.com/microlinkhq/react-json-view",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/main.js",
   "author": {
     "name": "Han Shen"
