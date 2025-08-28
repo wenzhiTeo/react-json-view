@@ -5,6 +5,12 @@ with custom modifications and additional features
 ## Changes in this fork
 - Added `onToggleCollapsed` prop to control collapse behavior
 
+### Installation
+
+```shell
+npm i react-json-view-custom --save
+```
+
 ---
 
 <h1 align="center">
@@ -36,11 +42,7 @@ with custom modifications and additional features
    * `Ctrl/Cmd+Click` Edit Mode
    * `Ctrl/Cmd+Enter` Submit
 
-### Installation
 
-```shell
-npm install @microlink/react-json-view --save
-```
 
 ### Usage
 
